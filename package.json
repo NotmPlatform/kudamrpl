@@ -1,0 +1,19 @@
+{
+  "name": "gomrpl-weekly-bot",
+  "version": "1.1.2",
+  "private": true,
+  "type": "module",
+  "description": "Weekly Mariupol events parser and Telegram publisher for @gomrpl",
+  "scripts": {
+    "start": "node src/index.js",
+    "dry-run": "node src/index.js --dry-run",
+    "check": "node --check src/index.js && node --check src/scrapers.js && node --check src/formatter.js && node --check src/cover.js && node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "playwright": "1.62.1",
+    "sharp": "^0.35.3"
+  }
+}
